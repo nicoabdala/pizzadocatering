@@ -9,7 +9,7 @@ a{
 
 body{
     margin: 0px;
-    background: url(/IMG/fondosalsa.png) repeat center center fixed;
+    background: url(/IMG/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: #000;
     color: #fff;
@@ -542,7 +542,7 @@ body{
 }
 
 .button-events:hover svg {
-    transform: translateX(2.8em) rotate(45deg) scale(1.1);
+    transform: translateX(3em) scale(1.1);
 }
 
 .button-events:hover span {
@@ -579,9 +579,7 @@ body{
     }
 }
 
-
 /* ESCRITORIO */ 
-
 
 @media screen and (min-width:800px) {
 
@@ -660,11 +658,14 @@ body{
     }
 
     .section-title{
-        font-size: 2.5em;
+        font-size: 3.5em;
+        margin: 0;
     }
 
     .section-events-txt{
         font-size: 1.2em;
+        padding: 0;
+        padding-bottom: 30px;
     }
 
     footer{
