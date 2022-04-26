@@ -9,7 +9,7 @@ a{
 
 body{
     margin: 0px;
-    background: url(/IMG/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg) no-repeat center center fixed;
+    background: url('/IMG/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #000;
     color: #fff;
