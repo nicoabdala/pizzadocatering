@@ -7,7 +7,7 @@ a {
 
 body {
   margin: 0px;
-  background: url("/IMG/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg") no-repeat center center fixed;
+  background: url("IMG/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg") no-repeat center center fixed;
   background-size: cover;
   background-color: #000;
   color: #fff;
@@ -152,6 +152,51 @@ body {
     left: 10px; }
   .container-slider .slider-btn-right {
     right: 10px; }
+  .container-slider .draw-border {
+    box-shadow: inset 0 0 0 4px #be1615;
+    color: #be1615;
+    transition: color 0.25s 0.0833333333s;
+    position: relative; }
+  .container-slider .draw-border::before, .container-slider .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .container-slider .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px; }
+  .container-slider .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px; }
+  .container-slider .draw-border:hover {
+    color: #ffe593; }
+  .container-slider .draw-border:hover::before, .container-slider .draw-border:hover::after {
+    border-color: #f5b721;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%; }
+  .container-slider .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s; }
+  .container-slider .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s; }
+  .container-slider .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 17px "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem; }
+  .container-slider .btn:focus {
+    outline: 2px dotted #55d7dc; }
+  .container-slider .btn a {
+    text-decoration: none;
+    color: white; }
 
 /* 2 opciones */
 .container-options {
@@ -349,63 +394,6 @@ body {
   .main-footer .footer-link img {
     margin: 0px 20px 10px 20px; }
 
-/* Slider */
-.draw-border {
-  box-shadow: inset 0 0 0 4px #be1615;
-  color: #be1615;
-  transition: color 0.25s 0.0833333333s;
-  position: relative; }
-
-.draw-border::before, .draw-border::after {
-  border: 0 solid transparent;
-  box-sizing: border-box;
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  right: 0; }
-
-.draw-border::before {
-  border-bottom-width: 4px;
-  border-left-width: 4px; }
-
-.draw-border::after {
-  border-top-width: 4px;
-  border-right-width: 4px; }
-
-.draw-border:hover {
-  color: #ffe593; }
-
-.draw-border:hover::before, .draw-border:hover::after {
-  border-color: #f5b721;
-  transition: border-color 0s, width 0.25s, height 0.25s;
-  width: 100%;
-  height: 100%; }
-
-.draw-border:hover::before {
-  transition-delay: 0s, 0s, 0.25s; }
-
-.draw-border:hover::after {
-  transition-delay: 0s, 0.25s, 0s; }
-
-.btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  line-height: 1.5;
-  font: 700 17px "Roboto Slab", sans-serif;
-  padding: 1em 2em;
-  letter-spacing: 0.05rem; }
-
-.btn:focus {
-  outline: 2px dotted #55d7dc; }
-
-.btn a {
-  text-decoration: none;
-  color: white; }
-
 /*  MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 600px) {
@@ -448,7 +436,7 @@ body {
     margin: 150px; }
   /* EVENTOS */
   .section-events {
-    background: url("/IMG/an-overhead-view-of-homemade-pizza-decorated-with-basil-leaves-on-wooden-plank.jpg") no-repeat center;
+    background: url("IMG/an-overhead-view-of-homemade-pizza-decorated-with-basil-leaves-on-wooden-plank.jpg") no-repeat center;
     background-size: cover;
     height: 500px; }
     .section-events .section-container {
